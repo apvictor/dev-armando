@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import bfc from "../../assets/bfc.png";
 import qtc from "../../assets/qtc.png";
 import hyupp from "../../assets/hyupp.png";
-import universal from "../../assets/universal.png";
 import justa from "../../assets/justa.png";
+import speed from "../../assets/speed.png";
+import universal from "../../assets/universal.png";
 
 import { Project } from "./Project";
 
@@ -45,13 +46,18 @@ export function Projects() {
          name: "Justa Troca",
          img: justa,
       },
+      {
+         id: 6,
+         name: "Speed Now EAD",
+         img: speed,
+      },
    ];
 
    return (
       <>
          <div className="flex justify-between items-center px-1 py-4">
             <p className="text-dark dark:text-light">Principais projetos</p>
-            {projects.length > 5 && (
+            {projects.length > corte && (
                <p
                   className="text-gray text-sm cursor-pointer hover:text-gray/90 hover:font-bold"
                   onClick={() =>
@@ -67,8 +73,8 @@ export function Projects() {
                projects.map((project) => (
                   <Project
                      key={project.id}
-                     name={project.name}
                      img={project.img}
+                     name={project.name}
                   />
                ))}
 
@@ -78,8 +84,8 @@ export function Projects() {
                   .map((project) => (
                      <Project
                         key={project.id}
-                        name={project.name}
                         img={project.img}
+                        name={project.name}
                      />
                   ))}
          </div>
