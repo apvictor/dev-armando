@@ -12,7 +12,10 @@ export function SocialMedia() {
             url="https://www.linkedin.com/in/armando-pereira19/"
             icon={LinkedinLogo}
          />
-         <ButtonSocial url="https://github.com/Apvictor" icon={GithubLogo} />
+         <ButtonSocial
+            url="https://github.com/Apvictor"
+            icon={GithubLogo}
+         />
       </div>
    );
 }

@@ -8,12 +8,11 @@ interface Props {
 export function ButtonSocial({ icon: Icon, url }: Props) {
    return (
       <a
-         className="rounded-[50%] p-[3px]
-         flex items-center justify-center
-         w-[35px] h-[35px] bg-dark dark:bg-light
-         shadow-md shadow-dark dark:shadow-light/50
-         hover:bg-dark/90 dark:hover:bg-light/90
-         cursor-pointer"
+         className="rounded-[50%] p-[5px] flex items-center justify-center w-[35px] h-[35px]
+         ease-in duration-300
+         bg-dark dark:bg-light
+         shadow-md hover:shadow-dark dark:hover:shadow-light/70
+         hover:scale-[1.05]"
          href={url}
          target="_blank"
          rel="noreferrer"

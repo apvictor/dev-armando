@@ -20,7 +20,7 @@ export function Header({ name, office }: Props) {
                className="rounded-[50%] w-[125px] h-[125px]"
             />
 
-            <p className="font-bold text-dark text-lg dark:text-light">
+            <p className="ease-in duration-300 font-bold text-lg text-dark dark:text-light">
                {name}
             </p>
             <p className="text-gray text-sm">{office}</p>

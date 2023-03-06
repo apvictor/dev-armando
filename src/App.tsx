@@ -1,11 +1,15 @@
+import Modal from "react-modal";
+
 import { Header } from "./components/Header/Header";
 import { Button } from "./components/Buttons/Button";
 import { Projects } from "./components/Projects/Projects";
 
+Modal.setAppElement("#root");
+
 export function App() {
    return (
-      <div className="flex flex-col items-center justify-center dark:bg-dark">
-         <div className="max-w-xs md:max-w-md w-full">
+      <div className="ease-in duration-300 min-h-full flex flex-col items-center dark:bg-dark">
+         <div className="max-w-xs md:max-w-md w-full h-full">
             <Header name="Armando Pereira" office="Desenvolvedor Full-Stack" />
 
             <main>
@@ -15,8 +19,8 @@ export function App() {
                      title="Portfólio"
                   />
                   <Button
-                     url="https://wa.me/5511995052373?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento."
-                     title="Orçamento"
+                     url="https://wa.me/5511995052373?text=Olá,%20encontrei%20seu%20Portífolio."
+                     title="Contato"
                   />
                </div>
             </main>
