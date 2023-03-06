@@ -56,10 +56,10 @@ export function Projects() {
    return (
       <>
          <div className="flex justify-between items-center px-1 py-4">
-            <p className="text-dark dark:text-light">Principais projetos</p>
+            <p className="ease-in duration-300 text-dark dark:text-light">Principais projetos</p>
             {projects.length > corte && (
                <p
-                  className="text-gray text-sm cursor-pointer hover:text-gray/90 hover:font-bold"
+                  className="ease-in duration-300 text-gray text-sm cursor-pointer hover:text-gray/90 hover:font-bold"
                   onClick={() =>
                      seeMore === false ? setSeeMore(true) : setSeeMore(false)
                   }

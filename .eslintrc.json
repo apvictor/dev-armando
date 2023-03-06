@@ -20,7 +20,7 @@
       "@typescript-eslint/ban-types": "off", // Usar Function
       "@typescript-eslint/no-explicit-any": "off", // Usar any
       "indent": ["error", 3],
-      "linebreak-style": ["error", "unix"],
+      "linebreak-style": ["error", "windows"],
       "quotes": ["error", "double"],
       "semi": ["error", "always"]
    }
