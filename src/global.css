@@ -5,14 +5,14 @@
 html,
 body,
 #root {
-   font-family: 'Poppins', sans-serif;
-   height: 100%;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
 }
 
 button {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 a {
-   cursor: pointer;
+  cursor: pointer;
 }
